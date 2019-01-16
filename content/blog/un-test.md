@@ -7,7 +7,7 @@ thumbnail = "/uploads/incase.jpg"
 title = "Un test"
 
 +++
-Ceci est un test...
+Ceci est un test ! ...
 
 # Hé oui
 
