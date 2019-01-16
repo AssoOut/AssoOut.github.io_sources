@@ -22,4 +22,12 @@ file_template: ":filename:"
 build:
   publish_command: hugo --gc --minify --enableGitInfo
   output_directory: public
+  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
+  preview_output_directory: public
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.53
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.53
 version: '0.53'
