@@ -1,7 +1,7 @@
 ---
 title: "[Retour] Échange autour de *Swagger* d'Olivier Babinet"
 subtitle: "Retour sur la toute première médiation d'*OUT* !"
-author: "OUT !"
+author: "Out !"
 date: "2018-04-29"
 contentType: article
 thumbnail: /uploads/blog/2018-04-15-event_swagger_vinatier/thumbnail.jpg

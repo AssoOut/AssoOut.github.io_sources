@@ -1,7 +1,7 @@
 ---
 title: "[Retour] *Neuilly Sa Mère* à la Maison Mandela d'Annemasse"
 subtitle: "Deuxième intervention d'*OUT* !"
-author: "OUT !"
+author: "Out !"
 date: "2018-10-19"
 contentType: "article"
 thumbnail:  /uploads/blog/2018-10-19-maison_mandela/2.jpg

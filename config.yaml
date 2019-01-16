@@ -26,7 +26,7 @@ params:
  
   cover: "/uploads/logo.png"
   description: "L'association lyonnaise d'éveil par la culture !"
-  customCSS: ["my.css"]
+  customCSS: ["/my.css"]
   RSSLink: ""
   copyright: "© 2019"
   

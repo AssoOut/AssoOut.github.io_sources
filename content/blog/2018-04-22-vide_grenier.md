@@ -1,12 +1,15 @@
 ---
 title: "~~[Évènement] Vide-grenier culturel~~"
 subtitle: "dimanche 3 juin, à *BIMBO*"
-author: "OUT !"
+author: "Out !"
 date: "2018-04-22"
 contentType: event
 thumbnail: 	/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
 image: 		/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
+url:        /blog/2018/vide-grenier-bimbo/
 ---
+
+<!-- TODO: the normal name with '~' breaks the site, so replacing URL with 'url' var -->
 
 ***NB : Évènement reporté à une date ultérieure !***
 
