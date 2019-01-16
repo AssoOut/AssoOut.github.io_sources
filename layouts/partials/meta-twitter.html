@@ -1,0 +1,11 @@
+<meta name="twitter:card" content="summary_large_image"/>
+{{ if isset .Params "image" }}
+<meta name="twitter:image" content="{{ .Params.image  | absURL }}"/>
+{{ else if isset .Site.Params "image" }}<!-- mandatory to set it -->
+<meta name="twitter:image" content="{{ .Site.Params.image }}"/>
+{{ else }}{{ errorf ".Site.Params.image not defined!" }}
+{{ end }}
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{if .IsPage}}{{ .Description | default (substr .Summary 0 160) }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>
+<meta name="twitter:url" content="{{.URL | absURL}}" />
+<meta name="twitter:site" content="@{{ .Site.Params.twitterName }}"/>

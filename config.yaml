@@ -1,0 +1,80 @@
+baseurl: "//asso-out.fr"
+title: "Out !"
+#SectionPagesMenu: "main"
+
+languageCode: "fr"
+theme: "casper-two"
+canonifyurls: true
+markup: "mmark"
+
+paginate: 6
+enableEmoji: true
+disqusShortname: ""
+
+googleAnalytics: "UA-132500223-1"
+
+params:
+  title: "Out !"
+  subtitle: "La culture dehors !"
+  images: "/uploads/logo.png" # OpenGraph image(s)
+  image: "/uploads/logo.png"  # Twitter :image
+
+  iconIco: "/uploads/favicon.ico"
+  iconPng: "/uploads/favicon-152.png"
+  thumbnailPost: "/uploads/thumbnail.png"
+  thumbnailPage: "/uploads/thumbnail2.png"
+ 
+  cover: "/uploads/logo.png"
+  description: "L'association lyonnaise d'éveil par la culture !"
+  customCSS: ["my.css"]
+  RSSLink: ""
+  copyright: "© 2019"
+  
+  #twitterName: "faketryghost"
+  fbName: "OutAsso"
+
+  showSupport: true
+  logo:         "/uploads/logo.png"
+  # is it ever used???
+  orgName: "OUT ! La culture dehors"
+  orgWebsite: "https://www.asso-out.fr"
+  orgDescription: "Out ! La culture dehors"
+
+  # is it ever used???
+  author: "Out !"
+  authorAvatar: "/uploads/logo.png"
+  authorDescription: "L'équipe"
+  authorLocation: "Lyon, France" # not used
+  authorWebsite: "//asso-out.fr" # not used
+
+  pageNotFoundTitle: "Quatre-cent quatre"
+
+  #casper or caspertwo
+  singleViewStyle: "caspertwo"
+
+  # contentType types
+  iconArticle: "/uploads/icons/article_emoji.png"
+  iconEvent:   "/uploads/icons/alarm_emoji.png"
+
+permalinks:
+  blog: "/blog/:year/:slug/"
+
+#[[menu.main]]
+# name: "Home"
+# url: "/"
+# weight: 100
+
+menu:
+    main:
+        - name: "L'Asso"
+          url: "/asso/"
+          weight: 80
+        - name: "Les membres"
+          url: "/membres/"
+          weight: 70
+        - name: "Nos actions"
+          url: "/actions/"
+          weight: 60
+        - name: "Contact"
+          url: "/contact/"
+          weight: 50
