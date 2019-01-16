@@ -50,7 +50,7 @@ a {
 }
 
 main.site-main {
-    background: url(/uploads/img/body.png) bottom right no-repeat;
+    background: url(/uploads/body.png) bottom right no-repeat;
 }
 .flex {
     display: flex;
