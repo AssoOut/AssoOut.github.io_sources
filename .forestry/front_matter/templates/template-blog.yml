@@ -41,3 +41,5 @@ fields:
   description: Image d'en-tête de la page
   config:
     maxSize: '1'
+pages:
+- content/blog/un-test.md
