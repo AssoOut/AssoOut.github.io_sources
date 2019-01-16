@@ -20,6 +20,6 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  publish_command: hugo --gc --minify --enableGitInfo
+  publish_command: hugo --minify --enableGitInfo
   output_directory: _site
 version: '0.53'
