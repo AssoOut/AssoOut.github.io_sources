@@ -1,0 +1,43 @@
+---
+label: template-blog
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Titre
+  description: Titre de l'article
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Sous-titre
+  config:
+    required: true
+  description: Sous-titre de l'article
+- type: datetime
+  name: date
+  label: Date
+  description: Date
+  config:
+    date_format: DD/MM/YYYY
+    time_format: hh:mm
+    required: true
+- type: text
+  name: contentType
+  label: Type de contenu
+  description: Soit "article"  (pour une page classique) soit "event" pour un évènement
+  config:
+    required: true
+- type: file
+  name: thumbnail
+  label: Vignette
+  description: Vignette qui s'affiche en page d'accueil
+  config:
+    maxSize: '1'
+- type: file
+  name: image
+  label: Image
+  description: Image d'en-tête de la page
+  config:
+    maxSize: '1'
