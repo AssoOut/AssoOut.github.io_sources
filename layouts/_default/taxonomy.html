@@ -1,15 +1,11 @@
 {{ partial "head" . }}
 
-{{if eq .Site.Params.singleViewStyle "casper"}}
-  <body class="tag-template"><div class="site-wrapper">
-  {{ partial "header-sori-tag" . }}
-{{else}}
-  <body class="home-template"><div class="site-wrapper">
-  {{ partial "header" . }}
-{{end}}
+<body class="home-template"><div class="site-wrapper">
+{{ partial "header" . }}
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
+
     <div class="post-feed">
       {{ partial "post-list" . }}
     </div>
@@ -23,6 +19,7 @@
           <a class="older-posts" href="{{ .Paginator.Next.URL }}"><span class="hide">Posts précédents</span> &rarr;</a>
       {{end}}
     </nav>
+
   </div>
 </main>
 

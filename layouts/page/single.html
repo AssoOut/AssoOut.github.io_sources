@@ -1,22 +1,17 @@
 {{ partial "head" . }}
 
-{{if ne .Site.Params.singleViewStyle "casper"}}<body class="ctsingle">
-{{else}}<body class="page-template">{{end}}
+<body class="ctsingle">
 <div class="site-wrapper"> 
 
-{{if ne .Site.Params.singleViewStyle "casper"}}{{ partial "header" . }}
-{{else}}{{ partial "header-sori" . }}{{end}}
-
+{{ partial "header" . }}
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
-  	{{if ne .Site.Params.singleViewStyle "casper"}}
+
     <div class="post-feed">
       {{ partial "page-single" . }}
     </div>
-    {{else}}
-      {{ partial "page-single-sori" . }}
-    {{end}}
+
   </div>
 </main>
 

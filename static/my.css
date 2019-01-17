@@ -179,6 +179,13 @@ body.ctsingle article.post img {
     margin: auto;
 }
 
+/* DISQUS */
+
+#disqus_thread {
+    margin: 0 2em 4em 2em;
+    opacity:0.8;
+}
+
 /* MEMBRES */
 
 /* TODO: not overflow on next member section */

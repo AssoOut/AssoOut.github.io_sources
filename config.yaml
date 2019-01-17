@@ -9,8 +9,8 @@ markup: "mmark"
 
 paginate: 6
 enableEmoji: true
-disqusShortname: ""
 
+disqusShortname: "asso-out-fr"
 googleAnalytics: "UA-132500223-1"
 
 params:
@@ -47,14 +47,15 @@ params:
   authorLocation: "Lyon, France" # not used
   authorWebsite: "//asso-out.fr" # not used
 
-  pageNotFoundTitle: "Quatre-cent quatre"
-
-  #casper or caspertwo
+  #set it to caspertwo
   singleViewStyle: "caspertwo"
 
   # contentType types
   iconArticle: "/uploads/icons/article_emoji.png"
   iconEvent:   "/uploads/icons/alarm_emoji.png"
+
+  # disqus comments
+  disqusComments: true
 
 permalinks:
   blog: "/blog/:year/:slug/"

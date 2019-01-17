@@ -6,6 +6,7 @@
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
+
     <div class="post-feed">
       {{ partial "post-list" . }}
     </div>
@@ -19,6 +20,7 @@
           <a class="older-posts" href="{{ .Paginator.Next.URL }}"><span class="hide">Post précédent</span> &rarr;</a>
       {{end}}
     </nav>
+
   </div>
 </main>
 
