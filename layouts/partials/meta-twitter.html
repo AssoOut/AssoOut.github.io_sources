@@ -2,7 +2,7 @@
 {{ if isset .Params "image" }}
 <meta name="twitter:image" content="{{ .Params.image  | absURL }}"/>
 {{ else if isset .Site.Params "image" }}<!-- mandatory to set it -->
-<meta name="twitter:image" content="{{ .Site.Params.image }}"/>
+<meta name="twitter:image" content="{{ .Site.Params.image | absURL }}"/>
 {{ else }}{{ errorf ".Site.Params.image not defined!" }}
 {{ end }}
 <meta name="twitter:title" content="{{ .Title }}"/>
