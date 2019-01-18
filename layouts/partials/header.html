@@ -4,7 +4,7 @@
       <h1 class="site-title">
           {{ if .Site.Params.logo }}
             <a href="/">
-              <img class="site-logo" src="{{ .Site.Params.logo  | absURL}}" alt="{{ .Site.Title }}" />
+              <img class="site-logo" src="{{ .Site.Params.logo  | absURL}}" alt="Logo de {{ .Site.Title }}" />
             </a>
           {{else}}
             {{ .Site.Title }}

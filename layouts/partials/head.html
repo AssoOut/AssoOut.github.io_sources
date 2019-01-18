@@ -17,6 +17,10 @@
     {{ if .IsPage }} <meta name="description" content="{{ .Description | default (substr .Summary 0 160) }}" /> {{ else }}
     <meta name="description" content="{{ .Site.Params.metadescription | default .Site.Params.description }}" /> {{ end }}
 
+    {{ with .Site.Params.keywords }}
+    <meta name="keywords" content="{{ . }}" />
+    {{ end }}
+
     {{ partial "meta-twitter" . }}
     {{ partial "meta-facebook" . }}
 

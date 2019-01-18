@@ -5,7 +5,7 @@ author: "Out !"
 date: "2018-10-19"
 contentType: "article"
 thumbnail:  /uploads/blog/2018-10-19-maison_mandela/2.jpg
-image:      /uploads/blog/2018-10-19-maison_mandela/1.jpg
+image:      /uploads/blog/2018-10-19-maison_mandela/header.jpg
 ---
 
 *Out, la culture dehors !* a effectué sa **deuxième intervention à la maison de quartier Nelson Mandela à Annemasse, en Haute-Savoie**. Ce lieu qui fut autrefois une MJC accueille désormais un Espace de Vie Sociale, avec qui nous avons travaillé, notamment Marion Camus qui a été notre interlocutrice pour l’organisation.

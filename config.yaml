@@ -1,5 +1,5 @@
 baseurl: "https://asso-out.fr"
-title: "Out !"
+title: "Out ! La culture dehors"
 #SectionPagesMenu: "main"
 
 languageCode: "fr"
@@ -14,8 +14,8 @@ disqusShortname: "asso-out-fr"
 googleAnalytics: "UA-132500223-1"
 
 params:
-  title: "Out !"
   subtitle: "La culture dehors !"
+  keywords: "Out, out, asso out, association, asso, Lyon, association lyonnaise, asoociation, associations, culture, ouverture, cinéma, théâtre, interventions"
   images: "/uploads/logo.png" # OpenGraph image(s)
   image: "/uploads/logo.png"  # Twitter :image
 
