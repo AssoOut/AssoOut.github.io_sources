@@ -28,7 +28,6 @@ params:
   description: "L'association lyonnaise d'éveil par la culture !"
   customCSS: ["/my.css"]
   RSSLink: ""
-  copyright: "© 2019"
   
   #twitterName: "faketryghost"
   fbName: "OutAsso"
