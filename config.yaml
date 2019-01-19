@@ -2,51 +2,54 @@ baseurl: "https://asso-out.fr"
 title: "Out ! La culture dehors"
 #SectionPagesMenu: "main"
 
-languageCode: "fr"
 theme: "casper-two"
-canonifyurls: true
 markup: "mmark"
-
+languageCode: "fr"
+canonifyurls: true
 paginate: 6
-enableEmoji: true
 
+enableEmoji: true
 disqusShortname: "asso-out-fr"
 googleAnalytics: "UA-132500223-1"
 
 params:
   subtitle: "La culture dehors !"
+  logo:     "/uploads/logo.png"
+  email: "asso.out@gmail.com"
   keywords: "Out, out, asso out, association, asso, Lyon, association lyonnaise, asoociation, associations, culture, ouverture, cinéma, théâtre, interventions"
-  images: "/uploads/logo.png" # OpenGraph image(s)
+  images: [ "/uploads/logo.png", "/uploads/blog/2018-10-19-maison_mandela/1.jpg", "/uploads/blog/2018-04-22-vide_grenier/affiche.jpg" ] # OpenGraph image(s)
   image: "/uploads/logo.png"  # Twitter :image
+  cover: "/uploads/logo.png"
+  description: "L'association lyonnaise d'éveil par la culture !"
 
   iconIco: "/uploads/favicon.ico"
   iconPng: "/uploads/favicon-152.png"
   thumbnailPost: "/uploads/thumbnail.png"
   thumbnailPage: "/uploads/thumbnail2.png"
  
-  cover: "/uploads/logo.png"
-  description: "L'association lyonnaise d'éveil par la culture !"
   customCSS: ["/my.css"]
   RSSLink: ""
   
+  # Structured Data
+  structuredData: true
+  legalName: "Out, la culture dehors"
+  founders: 
+  - name: "Noémie Fidélin"
+    role: "Co-fondatrice"
+  - name: "Mathilde Floch-Brenaud"
+    role: "Co-fondatrice"
+  orgName: "Out ! La culture dehors"
+
   #twitterName: "faketryghost"
   fbName: "OutAsso"
 
   showSupport: true
-  logo:         "/uploads/logo.png"
-  # is it ever used???
-  orgName: "OUT ! La culture dehors"
-  orgWebsite: "https://www.asso-out.fr"
-  orgDescription: "Out ! La culture dehors"
 
   # is it ever used???
   author: "Out !"
   authorAvatar: "/uploads/logo.png"
-  authorDescription: "L'équipe"
-  authorLocation: "Lyon, France" # not used
-  authorWebsite: "//asso-out.fr" # not used
 
-  #set it to caspertwo
+  # set it to caspertwo
   singleViewStyle: "caspertwo"
 
   # contentType types

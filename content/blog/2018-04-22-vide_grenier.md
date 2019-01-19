@@ -4,6 +4,24 @@ subtitle: "dimanche 3 juin, à *BIMBO*"
 author: "Out !"
 date: "2018-04-22"
 contentType: event
+event:
+    name: "Vide-grenier culturel avec l'association Out !"
+    startDate: "2018-06-03 10:00"
+    endDate: "2018-06-03 18:00"
+    images: [ "/uploads/blog/2018-04-22-vide_grenier/affiche.jpg" ]
+    description: "Venez vendre vos CDs, vinyles, affiches, DVDs, figurines, livres, etc. !"
+    location:
+        name: "BIMBO"
+        street: "60 rue Salomon Reinach"
+        postalCode: "69007"
+        city: "Lyon"
+        region: "Rhône-Alpes"
+    canceled: true
+    free: true
+    contributor: "Bimbo"
+    ageRange: "25"
+    workFeatured: "Die Hard"
+    fbURL: ""
 thumbnail: 	/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
 image: 		/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
 url:        /blog/2018/vide-grenier-bimbo/

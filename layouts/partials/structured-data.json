@@ -1,0 +1,186 @@
+[
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+    {{ range $cnt, $val := $.Site.Menus.main }}
+        {
+            "@type": "ListItem",
+            "position": {{ sub (len $.Site.Menus.main) $cnt }},
+            "name": "{{ .Name }}",
+            "item": "{{ .URL | absURL }}"
+        }
+        {{- cond (eq (len $.Site.Menus.main) (add $cnt 1)) "" "," }}
+    {{ end }}
+    ]
+},
+{{ if .IsHome }}
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ with .Site.Params.logo }}{{ . | absURL }}{{ else }}{{ errorf ".Params.logo not set!"}}{{ end }}",
+    "name": "{{ .Site.Title }}",
+    "description": "{{ with .Site.Params.description }}{{ . }}{{ else }}{{ errorf ".Params.description not set!"}}{{ end }}",
+    "legalName": "{{ with .Site.Params.legalName }}{{ . }}{{ else }}{{ errorf ".Params.legalName not set!"}}{{ end }}",
+    "email": "{{ with .Site.Params.email }}{{ . }}{{ end }}",
+    "sameAs": "{{ with .Site.Params.fbName }}https://facebook.com/{{ . }}{{ end }}",
+    "address": {
+       "@type": "PostalAddress",
+       "addressCountry": "France",
+       "addressRegion": "Auvergne-Rhône-Alpes",
+       "addressLocality": "Lyon",
+       "postalCode": "69007"
+        },
+    "contactPoint": {
+        "@type": "contactPoint",
+        "availableLanguage": "{{ with .Site.LanguageCode }}{{ . }}{{ end }}",
+        "email": "{{ with .Site.Params.email }}{{ . }}{{ end }}",
+        "url": "{{ .Site.BaseURL }}",
+        "contactType": "{{ with .Site.Params.contactType }}{{ . }}{{ else }}reservations{{ end }}"
+    },
+    "founders": [
+    {{ range $cnt, $val := $.Site.Params.founders }}   {
+            "@type": "person",
+            "name": "{{ .name }}",
+            "description": "{{ .role }}"
+        }
+        {{- cond (eq (len $.Site.Params.founders) (add $cnt 1)) "" "," }}
+    {{ end }}
+    ],
+    "image": [
+        {{ range $cnt, $val := $.Site.Params.images }}"{{ $val | absURL }}"
+            {{- cond (eq (len $.Site.Params.images) (add $cnt 1)) "" "," }}
+        {{ end }}
+    ]
+}
+{{ end }}
+{{ if .IsPage }}
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title | markdownify | plainify | htmlUnescape }}",
+  "mainEntityOfPage": {
+    "@type": "Website",
+    "@id": "{{ .Site.BaseURL }}"
+  },
+  "articleBody": "{{ .Content | plainify | htmlUnescape }}",
+  "inLanguage": "fr",
+  "genre": "{{ .Type }}",
+  {{ with .Section -}}
+  "articleSection": "{{ . }}",
+  {{- end }}
+  {{ if isset .Params "image" -}}
+  "image": "{{ .Params.image | absURL }}",
+  {{ else if isset .Params "thumbnail" -}}
+  "image": "{{ .Params.thumbnail | absURL }}",
+  {{- else }}
+  "image": "{{ .Site.Params.image | absURL }}",
+  {{- end }}
+  {{ with .Params.tags -}}
+  "keywords": "{{ delimit . ", " }}",
+  {{- end }}
+  "wordcount": {{ .WordCount }},
+  "url": "{{ .Permalink }}",
+  {{ if not .PublishDate.IsZero -}}
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  {{- else if not .Date.IsZero -}}
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  {{- end }}
+  {{ with .Lastmod -}}
+  "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  {{- end }}
+  {{ with .Site.Copyright -}}
+  "license": "{{ . }}",
+  {{- end }}
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.orgName }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.Params.logo | absURL }}"
+    }
+  },
+  {{ if .Params.author -}}
+  "author": {
+    {{ if (eq .Params.author "Out !") }}
+    "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}",
+    {{ else }}
+    "@type": "Person",
+    {{ end }}
+    "name": "{{ .Params.author }}"
+  },
+  {{- end }}
+  "description": "{{ .Params.Subtitle | markdownify | plainify | htmlUnescape }}"
+}
+{{ end -}}
+{{- if eq .Params.contentType "event" }}
+,{
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "{{ .Params.event.name }}",
+    "startDate": "{{ .Params.event.startDate }}",
+    "endDate":   "{{ .Params.event.endDate   }}",
+    "about": {
+        "@id": "{{ .Site.BaseURL }}",
+        "name": "{{ .Site.Params.orgName }}"
+    },
+    {{ with .Site.Params.event.fbURL }}
+    "sameAs": "{{ . }}",
+    {{ end }}
+    {{ if eq .Params.event.canceled true }}
+    "eventStatus": "EventCancelled",
+    {{ end }}
+    "isAccessibleForFree": {{ .Params.event.free }},
+    "location": {
+      "@type": "Place",
+      "name": "{{ .Params.event.location.name }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress":    "{{ .Params.event.location.street }}",
+        "postalCode":       "{{ .Params.event.location.postalCode }}",
+        "addressLocality":  "{{ .Params.event.location.city }}",
+        "addressRegion":    "{{ .Params.event.location.region }}",
+        "addressCountry":   "France"
+      }
+    },
+    "image": [
+        {{ range $cnt, $val := $.Params.event.images -}}"{{ $val | absURL }}"
+            {{- cond (eq (len  $.Params.event.images) (add $cnt 1)) "" "," -}}
+        {{- end }}
+    ],
+    {{ with .Params.event.contributor -}}
+    "contributor": {
+        "@type": "Organization",
+        "name": "{{ . }}"
+    },
+    {{- end }}
+    {{ with .Params.event.ageRange -}}
+    "typicalAgeRange": "{{ . }}",
+    {{- end }}
+    {{ with .Params.event.workFeatured -}}
+    "workFeatured": {
+        "type": "CreativeWork",
+        "name": "{{ . }}"
+    },
+    {{- end }}
+    "description": "{{ .Params.event.description }}",
+    "performer": {
+        "@type": "Organization",
+        "@id": "{{ .Site.BaseURL }}",
+        "name": "{{ .Site.Params.orgName }}"
+    },
+    "organizer": {
+        "@type": "Organization",
+        "@id": "{{ .Site.BaseURL }}",
+        "name": "{{ .Site.Params.orgName }}"
+    }
+}
+{{- else if eq .Params.contentType "event-screening" -}}
+,{
+    
+}
+{{- end }}
+]

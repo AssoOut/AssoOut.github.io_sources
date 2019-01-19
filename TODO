@@ -1,6 +1,5 @@
-* homogénéiser les layouts là, c'est le bordel entre les 'single', les 'sori' et les 'list', etc.
-    * normalement plus aucune partial n'utilise les '-sori*' : tous les effacer ?
 * paramètres GitHub/Forestry :
     site@asso-out.fr
     k..l    
 * SEO
+    * Structured data for contentType == "event-screening"
