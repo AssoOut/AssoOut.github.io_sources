@@ -1,6 +1,7 @@
+<script type="application/ld+json">
 [
 {
-    "@context": "https://schema.org",
+    "@context": "http://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
     {{ range $cnt, $val := $.Site.Menus.main }}
@@ -118,8 +119,29 @@
 {{ end -}}
 {{- if eq .Params.contentType "event" }}
 ,{
-    "@context": "https://schema.org",
+    "@context": "http://schema.org",
+    {{ with .Params.event.film }}
+    "@type": "ScreeningEvent",
+    "videoFormat": "HD",
+    "workPresented": {
+        "@type":    "Movie",
+        "name":     "{{ .name }}",
+        "dateCreated": "{{ .date }}",
+        "sameAs":   "{{ .imdburl }}",
+        "duration": "{{ .duration }}",
+        "image": "{{ .image | absURL }}",
+        "countryOfOrigin": {
+            "@type": "Country",
+            "name": "{{ .country }}"
+        },
+        "director":   {
+            "@type":  "Person",
+            "name":   "{{ .director }}"
+        }
+    },
+    {{ else }}
     "@type": "Event",
+    {{ end }}
     "name": "{{ .Params.event.name }}",
     "startDate": "{{ .Params.event.startDate }}",
     "endDate":   "{{ .Params.event.endDate   }}",
@@ -133,7 +155,11 @@
     {{ if eq .Params.event.canceled true }}
     "eventStatus": "EventCancelled",
     {{ end }}
-    "isAccessibleForFree": {{ .Params.event.free }},
+    {{ if .Params.event.free }}
+    "isAccessibleForFree": "true",
+    {{ else }}
+    "isAccessibleForFree": "false",
+    {{ end }}
     "location": {
       "@type": "Place",
       "name": "{{ .Params.event.location.name }}",
@@ -166,6 +192,12 @@
         "name": "{{ . }}"
     },
     {{- end }}
+    {{ with .Params.event.ticketsURL }}
+    "offers": {
+        "@type": "Offer",
+        "url": "{{ . }}"
+    },
+    {{ end }}
     "description": "{{ .Params.event.description }}",
     "performer": {
         "@type": "Organization",
@@ -178,9 +210,6 @@
         "name": "{{ .Site.Params.orgName }}"
     }
 }
-{{- else if eq .Params.contentType "event-screening" -}}
-,{
-    
-}
 {{- end }}
 ]
+</script>

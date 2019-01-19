@@ -6,8 +6,8 @@ date: "2018-04-22"
 contentType: event
 event:
     name: "Vide-grenier culturel avec l'association Out !"
-    startDate: "2018-06-03 10:00"
-    endDate: "2018-06-03 18:00"
+    startDate: "2018-06-03T10:00"
+    endDate: "2018-06-03T18:00"
     images: [ "/uploads/blog/2018-04-22-vide_grenier/affiche.jpg" ]
     description: "Venez vendre vos CDs, vinyles, affiches, DVDs, figurines, livres, etc. !"
     location:
@@ -22,6 +22,7 @@ event:
     ageRange: "25"
     workFeatured: "Die Hard"
     fbURL: ""
+    ticketsURL: ""
 thumbnail: 	/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
 image: 		/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
 url:        /blog/2018/vide-grenier-bimbo/

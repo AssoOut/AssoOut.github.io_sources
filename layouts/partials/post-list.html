@@ -43,7 +43,7 @@
               <span class="post-card-author"><a href="/">{{.Params.author | default .Site.Params.author}}</a></span>
           </div>
           <div>
-              {{ if or (eq .Params.contentType "event") (eq .Params.contentType "event-screening") }} 
+              {{ if eq .Params.contentType "event" }} 
                   <img class="post-card-icon" src="{{ .Site.Params.iconEvent }}" alt="[évènement]">
               {{ else if eq .Params.contentType "article" }} 
                   <img class="post-card-icon" src="{{ .Site.Params.iconArticle }}" alt="[article]">
