@@ -7,7 +7,7 @@
     {{ range $cnt, $val := $.Site.Menus.main }}
         {
             "@type": "ListItem",
-            "position": {{ sub (len $.Site.Menus.main) $cnt }},
+            "position": "1",
             "name": "{{ .Name }}",
             "item": "{{ .URL | absURL }}"
         }
