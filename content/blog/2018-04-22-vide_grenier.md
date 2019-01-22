@@ -22,7 +22,7 @@ event:
     ageRange: "25"
     workFeatured: "Die Hard"
     fbURL: ""
-    ticketsURL: ""
+    ticketsURL: "https://www.facebook.com/OutAsso/"
 thumbnail: 	/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
 image: 		/uploads/blog/2018-04-22-vide_grenier/affiche.jpg
 url:        /blog/2018/vide-grenier-bimbo/
