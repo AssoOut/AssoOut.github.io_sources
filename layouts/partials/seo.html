@@ -117,7 +117,7 @@
   "description": "{{ .Params.Subtitle | markdownify | plainify | htmlUnescape }}"
 }
 {{ end -}}
-{{- if eq .Params.contentType "event" }}
+{{- if and (eq .Params.contentType "event") (.Params.event) }}
 ,{
     "@context": "http://schema.org",
     {{ with .Params.event.film }}
