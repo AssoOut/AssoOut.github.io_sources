@@ -4,7 +4,7 @@
       <a href="/">{{.Site.Params.orgName}}</a> &copy; {{ now.Format "2006"}}<br>
       {{with .Site.Params.showSupport}}
       <span style="font-size: 0.8em; color: #111;">
-          {{ "[Hugo](//gohugo.io)" | markdownify }} × <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> × {{ "[TonEntreprise.fr](//tonentreprise.fr)" | markdownify }} 
+          {{ markdownify "[TonEntreprise.fr](//tonentreprise.fr) × [Hugo](//gohugo.io) × [Casper 2.1.7](https://github.com/TryGhost/Casper)" | safeHTML }} 
       </span>{{end}}
     </section>
     <nav class="site-footer-nav">
