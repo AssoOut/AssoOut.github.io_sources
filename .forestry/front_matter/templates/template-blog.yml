@@ -41,4 +41,5 @@ fields:
   config:
     maxSize: '1'
 pages:
+- content/blog/maison-mandela-deuxième.md
 - content/blog/un-test.md
