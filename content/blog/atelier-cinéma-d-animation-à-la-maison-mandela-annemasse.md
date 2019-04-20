@@ -1,7 +1,6 @@
 +++
 contentType = "article"
 date = "2019-04-19T22:00:00+00:00"
-draft = true
 image = "/uploads/photo out4.jpg"
 subtitle = "Images "
 thumbnail = "/uploads/Photo out1.jpg"
