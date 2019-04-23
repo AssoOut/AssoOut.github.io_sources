@@ -1,7 +1,6 @@
 +++
 contentType = "article"
 date = "2019-04-22T22:00:00+00:00"
-draft = true
 image = ""
 subtitle = "Les petits réalisateurs de la Maison Mandela..."
 thumbnail = "/uploads/photo out2.jpg"
