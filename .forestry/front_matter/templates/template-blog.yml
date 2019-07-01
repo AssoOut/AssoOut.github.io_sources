@@ -41,6 +41,6 @@ fields:
   config:
     maxSize: '1'
 pages:
-- content/blog/atelier-cinéma-d-animation-à-la-maison-mandela-annemasse.md
-- content/blog/les-films-de-l-atelier-en-ligne.md
 - content/blog/maison-mandela-deuxième.md
+- content/blog/les-films-de-l-atelier-en-ligne.md
+- content/blog/atelier-cinéma-d-animation-à-la-maison-mandela-annemasse.md
