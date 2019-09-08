@@ -7,3 +7,4 @@ Comment ce site marche ?
 Avec : Google Analytics, Disqus, etc.
 Logins : site@.., k..l
 
+Build command: hugo --gc --minify --enableGitInfo
