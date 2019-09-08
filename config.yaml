@@ -1,6 +1,7 @@
 baseurl: "https://asso-out.fr"
 title: "Out ! La culture dehors"
 #SectionPagesMenu: "main"
+publishdir: "_site"
 
 theme: "casper-two"
 markup: "mmark"

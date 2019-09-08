@@ -88,7 +88,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 if [[ CLEAN_SITE -eq 1 ]]; then
     fn_clean_site
 fi
-# Build the project.
+# Build
 if [[ BUILD_SITE -eq 1 ]]; then
     hugo $HUGO_OPT
 fi
