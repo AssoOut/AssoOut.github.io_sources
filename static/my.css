@@ -178,6 +178,9 @@ body.ctsingle article.post img {
     display: block;
     margin: auto;
 }
+iframe {
+    padding: 1em 0;
+}
 
 /* DISQUS */
 

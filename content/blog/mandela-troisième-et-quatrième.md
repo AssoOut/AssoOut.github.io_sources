@@ -4,8 +4,8 @@ subtitle: "[Retour] *La Famille Bélier* et *Ma Vie De Courgette*"
 author: "Out !"
 date: "2019-06-25"
 contentType: article
-thumbnail: 	/uploads/blog/mandela-troisième-et-quatrième/3.jpg
-image: 	    /uploads/blog/mandela-troisième-et-quatrième/4.jpg
+thumbnail: 	/uploads/blog/mandela-troisieme-et-quatrieme/3.jpg
+image: 	    /uploads/blog/mandela-troisieme-et-quatrieme/4.jpg
 ---
 
 Après une troisième séance avec peu de spectateurs pour le film *La Famille Bélier*, l’espace sociale de la Maison Mandela et l’association *Out, la culture dehors* ont décidé de viser à nouveau public jeune, ce qui avait été un succès lors de notre toute première séance en octobre 2018 !

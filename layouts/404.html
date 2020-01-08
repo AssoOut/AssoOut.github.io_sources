@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" />
+<html lang="{{ .Site.LanguageCode }}" />
 <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="{{ $.Site.Params.iconIco }}"/>
@@ -15,7 +15,7 @@
 
     <link rel="canonical" href="{{ .Permalink }}" />
 
-    <meta name="description" content="404&nbsp;: Page introuvable" />
+    <meta name="description" content="404 : Page introuvable" />
 
     {{ partial "meta-twitter" . }}
     {{ partial "meta-facebook" . }}

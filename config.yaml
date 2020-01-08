@@ -6,6 +6,7 @@ canonifyURLs: true
 
 theme: "casper-two"
 markup: "mmark"
+defaultContentLanguage: "fr"
 languageCode: "fr"
 canonifyurls: true
 paginate: 6
@@ -15,6 +16,7 @@ disqusShortname: "asso-out-fr"
 googleAnalytics: "UA-132500223-1"
 
 params:
+  description: "L'association lyonnaise d'éveil par la culture !"
   subtitle: "La culture dehors !"
   logo:     "/uploads/logo.png"
   email: "asso.out@gmail.com"
@@ -22,7 +24,6 @@ params:
   images: [ "/uploads/logo.png", "/uploads/blog/2018-10-19-maison_mandela/1.jpg", "/uploads/blog/2018-04-22-vide_grenier/affiche.jpg" ] # OpenGraph image(s)
   image: "/uploads/logo.png"  # Twitter :image
   cover: "/uploads/logo.png"
-  description: "L'association lyonnaise d'éveil par la culture !"
 
   iconIco: "/uploads/favicon.ico"
   iconPng: "/uploads/favicon-152.png"

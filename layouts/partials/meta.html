@@ -1,0 +1,38 @@
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} {{ "&middot;" | htmlUnescape }} {{ end }}{{ .Site.Title }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    {{if .Site.Params.fbName}}
+        <meta property="article:publisher" content="//www.facebook.com/{{.Site.Params.fbName}}" />
+        <meta property="article:author"    content="//www.facebook.com/{{.Site.Params.fbName}}" />
+    {{end}}
+    <meta property="og:updated_time" content="{{ .Date }}"/>
+
+{{ if .IsHome }}
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+{{ else }}
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="{{if .Params.description}}{{ .Params.description }}{{else}}{{ .Description  | default (substr .Summary 0 150) | htmlUnescape | plainify }}...{{ end }}" />
+
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
+    {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}" />{{ end }}
+{{ end }}
+{{if .Params.image }}
+    <meta property="og:image" content="{{ .Params.image | absURL}}"/>
+{{else if .Site.Params.cover}}
+    <meta property="og:image" content="{{ .Site.Params.cover | absURL}}"/>
+{{end}}
+
+<meta name="twitter:card" content="summary_large_image"/>
+{{ if isset .Params "image" }}
+<meta name="twitter:image" content="{{ .Params.image  | absURL }}"/>
+{{ else if isset .Site.Params "image" }}<!-- mandatory -->
+<meta name="twitter:image" content="{{ .Site.Params.image | absURL }}"/>
+{{ else }}{{ errorf ".Site.Params.image not defined!" }}
+{{ end }}
+<meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }} {{ "&middot;" | htmlUnescape }} {{ end }}{{ .Site.Title }}"/>
+<meta name="twitter:description" content="{{if .Params.description}}{{ .Params.description }}{{else if .IsPage}}{{ .Description  | default (substr .Summary 0 150) | htmlUnescape | plainify }}...{{ else }}{{ .Site.Params.description }}{{ end }}"/>
+<meta name="twitter:url" content="{{ .URL | absURL}}" />
+{{ with .Site.Params.twitterName }}
+<meta name="twitter:site" content="@{{ . }}"/>
+{{ end }}

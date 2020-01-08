@@ -19,7 +19,7 @@ Organiser une séance cinéma dans un hôpital, une prison ou une maison de retr
 mais rien n’est fait pour pousser la réflexion autour de thème d’un film, faire découvrir l’histoire du 
 cinéma et ses secrets. *Out* propose un échange autour de films choisis par les médiateurs, en lien avec les équipes des lieux où les interventions seront organisées. 
 
-# Ce que nous apportons
+## Ce que nous apportons
 
 Ces lieux (maisons de retraites, hôpitaux de jour, centre sociaux...) ont des équipes dédiées à la vie quotidienne de leurs pensionnaires et 
 des urgences auxquelles il faut faire face. Bien que la culture ne soit pas secondaire, ils n’ont pas souvent la possibilité d’établir une programmation culturelle variée et
@@ -43,21 +43,21 @@ Les missions du médiateur sont multiples :
 * Créer un lien de confiance avec un public non acquis
 -->
 
-# Vision future
+## Vision future
 
 Aujourd’hui, l’association, portée par plusieurs membres actifs, se concentre autour du cinéma. Toutefois leurs intérêts pour les arts en général et les diverses rencontres que pourront amener leur activité vont permettre de développer d’autres formes de médiations culturelles. En voici quelques exemples.
 
-## Les compagnies de théâtre et de danse
+### Les compagnies de théâtre et de danse
 
 Elles pourront jouer leur spectacle dans les lieux partenaires de notre association et un échange sera possible avec les spectateurs. 
 Ces spectacles inédits seront l’occasion de faire découvrir la création contemporaine d’aujourd’hui à des spectateurs qui n’ont pas ou très peu l’occasion d’assister à ce type d’événements. 
 
-## Les résidences d’artistes
+### Les résidences d’artistes
 
 Être en résidence au sein de notre association permettra à l’artiste de créer un projet de toutes pièces avec une ou plusieurs structures partenaires. 
 Un échange enrichissant pourra alors se faire entre artiste et résidents de structures d’accueil. 
 
-## Un festival
+### Un festival
 
 Un lieu où les projets créés toute l’année pourront être montrés et diffusés, une fenêtre sur ce qui se passe dans les structures partenaires,
  des concerts, des séances plein air, des scènes à ciel ouvert... La parfaite occasion de créer des rencontres, des échanges, de nouveaux 

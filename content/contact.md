@@ -11,9 +11,7 @@ share : false
 
 <div class="contact">
 
-<!--Nous contacter : <a href="mailto:contact@asso-out.fr">contact@asso-out.fr</a>-->
-<p>Nous contacter&nbsp;: <a href="mailto:asso.out@gmail.com">asso.out@gmail.com</a></p>
-
+<p>Nous contacter&nbsp;: <a href="mailto:asso.out@gmail.com">asso.out@gmail.com</a> </p>
 <p>L'association <i>Out&nbsp;!</i> reste disponible pour répondre à vos questions, vos demandes et vos propositions !</p>
 
 </div>

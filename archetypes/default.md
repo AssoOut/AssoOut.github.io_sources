@@ -1,7 +1,12 @@
 +++
+contentType = "article"
 title = "{{ replace .Name "-" " " | title }}"
-date = {{ .Date }}
+subtitle = ""
 author = "OUT !"
+date = {{ .Date }}
+image = ""
+thumbnail = ""
+
 draft = true
 +++
 

@@ -1,9 +1,9 @@
 +++
 contentType = "article"
 date = "2019-04-19T22:00:00+00:00"
-image = "/uploads/photo out4.jpg"
-subtitle = "Images "
-thumbnail = "/uploads/Photo out1.jpg"
+image = "/uploads/photo_out4.jpg"
+subtitle = "En images..."
+thumbnail = "/uploads/photo_out1.jpg"
 title = "Atelier cinéma d'animation à la maison Mandela (Annemasse)"
 
 +++
@@ -13,6 +13,6 @@ Sur 3 jours, chaque groupe a inventé une histoire, mis en scène leurs personna
 
 Retour en image avant de découvrir le résultat final !
 
-![](/uploads/photo out2.jpg)
+![](/uploads/photo_out2.jpg)
 
-![](/uploads/photo out3.jpg)
+![](/uploads/photo_out3.jpg)
