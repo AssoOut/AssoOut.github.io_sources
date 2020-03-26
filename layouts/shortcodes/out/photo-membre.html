@@ -1,0 +1,5 @@
+{{ with .Get "class" }}
+    <div id="photo-membre" class="{{ . }}"></div>
+{{ else }}
+    {{ errorf "missing value for param 'class': %s" .Position }}
+{{ end }}

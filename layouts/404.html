@@ -20,7 +20,7 @@
     {{ partial "meta-twitter" . }}
     {{ partial "meta-facebook" . }}
 
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
 
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="{{ "built/screen.css" | absURL}}" /> 

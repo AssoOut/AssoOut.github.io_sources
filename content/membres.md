@@ -8,7 +8,7 @@ nav: membres
 
 ## Noémie Fidélin, 27 ans
 
-<div id="photo-membre" class="noemie"></div>
+{{< out/photo-membre class="noemie" >}}
 
 > *Pourquoi as-tu souhaité adhérer à* OUT, la culture dehors *?*
 
@@ -24,7 +24,7 @@ Mes connaissances en cinéma et mon envie de rassembler les qualités de chacun 
 
 ## Mathilde Floch Brenaud, 24 ans
 
-<div id="photo-membre" class="mathilde"></div>
+{{< out/photo-membre class="mathilde" >}}
 
 > *Pourquoi as-tu souhaité adhérer à* OUT, la culture dehors *?*
 
@@ -41,7 +41,7 @@ Une envie de partage et de rencontres aux travers de projets collectifs et nouve
 
 ## Amélie Fidélin, 25 ans
 
-<div id="photo-membre" class="amelie"></div>
+{{< out/photo-membre class="amelie" >}}
 
 > *Pourquoi as-tu souhaité adhérer à* OUT, la culture dehors *?*
 
@@ -76,7 +76,7 @@ L’envie de transmission et de partage !
 
 ## Sibil Çekmen, 34 ans
 
-<div id="photo-membre" class="sibil"></div>
+{{< out/photo-membre class="sibil" >}}
 
 > *Pourquoi as-tu souhaité adhérer à* OUT, la culture dehors *?*
 
@@ -94,7 +94,7 @@ Ma passion pour penser la vie à travers les images.
 
 ## Sylvain Saubier, 25 ans
 
-<div id="photo-membre" class="sylvain"></div>
+{{< out/photo-membre class="sylvain" >}}
 
 > *Pourquoi as-tu souhaité adhérer à* OUT, la culture dehors *?*
 
@@ -110,7 +110,7 @@ Un beau site internet et une expertise hors-norme en matière capillaire&nbsp;!
 
 ## Marie-Léa Seguin, 25 ans
 
-<div id="photo-membre" class="marielea"></div>
+{{< out/photo-membre class="marielea" >}}
 
 > *Pourquoi as-tu souhaité adhérer à* OUT, la culture dehors *?*
 
@@ -126,7 +126,7 @@ Des paillettes !
 
 ## Yannick Lenfle, 28 ans
 
-<div id="photo-membre" class="yannick"></div>
+{{< out/photo-membre class="yannick" >}}
 
 > *Pourquoi as-tu souhaité adhérer à* OUT, la culture dehors *?*
 

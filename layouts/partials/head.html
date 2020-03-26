@@ -24,7 +24,7 @@
 
     {{ partial "meta" . }}
 
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
 
     {{ "<!-- Stylesheets -->" | safeHTML }}
     <link rel="stylesheet" type="text/css" href="{{ "built/screen.css" | absURL}}" /> 

@@ -9,9 +9,6 @@ noauthor : true
 share : false
 ---
 
-<div class="contact">
+**Nous contacter&nbsp;:** [asso.out@gmail.com](mailto:asso.out@gmail.com)
 
-<p>Nous contacter&nbsp;: <a href="mailto:asso.out@gmail.com">asso.out@gmail.com</a> </p>
-<p>L'association <i>Out&nbsp;!</i> reste disponible pour répondre à vos questions, vos demandes et vos propositions !</p>
-
-</div>
+**L'association _Out&nbsp;!_ reste disponible pour répondre à vos questions, vos demandes et vos propositions !**
